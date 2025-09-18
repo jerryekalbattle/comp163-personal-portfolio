@@ -3,7 +3,7 @@ full_name = "Jerryeka Battle"
 Student_email = "jlbattle1@ncat.edu"
 Hometown = "Wilson, NC"
 Graduation_semester = "Spring 20292222222222222222222222222"
-Major = "Computer Science" 
+Major = "Computer Science"
 
 # Academic Data Organization (lists)
 current_courses = ["COMP 163", "MATH 131", "ENG 100", "HIS 106", "GEEN111", "COMP121"]
@@ -15,7 +15,7 @@ gpa_history = [] #semester GPAs as floats
 emergency_contact = ("Dad", "Jerry Battle", "704-555-0199")
 home_address = ("509 Walton st", "Wilson", "NC", "27893")
 instagram_info = ("Instagram", "@JerryekaBattle", 46)
-twitter_info = ()
+twitter_info = ("Twitter", "N/A", 0)
 birthday = ("Birthday", "7", "28", "2007")
 
 #Interest Tracking (sets)
@@ -26,14 +26,14 @@ hobbies = {"Gaming", "Photography", "Reading", "Cooking", "Baking"}
 entertainment_backlog = {"COD BO2"}
 
 #Organizational Mapping (dict)
-course_credits = {"COMP 163": 3, "MATH 131": 4, "ENG 100": 3, "HIS 106": 3, "GEEN111": 1, "COMP121": 1}
-course_professors = {"COMP 163": "Prof. Rhodes", "MATH 131": "Dr. Varatharajah", "ENG 100": "Dr. Martinez", "HIS 106": "Mr. Devoe", "GEEN111": Parrish, "COMP121": "Prof. Rhodes"}
-course_rooms = {"COMP 163": "McNair 130", "MATH 131": "Marteena 233", "ENG 100": "GCB107", "HIS 106": "online", "GEEN111": "McNair240", "COMP121": "Graham210"}
+course_credits = {"COMP 163": 3, "MATH 131": 4, "ENG 100": 3, "HIS 106": 3, "GEEN 111": 1, "COMP 121": 1}
+course_professors = {"COMP 163": "Prof. Rhodes", "MATH 131": "Dr. Varatharajah", "ENG 100": "Dr. Martinez", "HIS 106": "Mr. Devoe", "GEEN 111": "Parrish", "COMP 121": "Prof. Rhodes"}
+course_rooms = {"COMP 163": "McNair 130", "MATH 131": "Marteena 233", "ENG 100": "GCB107", "HIS 106": "online", "GEEN 111": "McNair240", "COMP 121": "Graham210"}
 monthly_budget = {"Food": 210, "Entertainment": 100, "Books": 50, "Transportation": 10}
 study_hours_per_subject = {"Programming": 10, "Math": 8, "English": 4, "History": 3}
 contact_directory = {"Mom": "704-555-0199", "Roommate": "336-555-7821", "Academic Advisor": "336-334-5000"}
 
-#Required Calculations 
+#Required Calculations
 total_current_credits = sum(credit_hours)
 cumulative_gpa = sum(gpa_history)/4
 # used to find the average
@@ -70,9 +70,11 @@ print(f"Academic Investment: ${study_cost_per_hour} per study hour")
 print()
 print("Current Courses:")
 print(f"{current_courses[0]} - {course_credits["COMP 163"]} credits - {course_professors["COMP 163"]} - {course_rooms["COMP 163"]}")
-print(f"{current_courses[1]} - {course_credits["MATH 150"]} credits - {course_professors["MATH 150"]} - {course_rooms["MATH 150"]}")
-print(f"{current_courses[2]} - {course_credits["ENG 101"]} credits - {course_professors["ENG 101"]} - {course_rooms["ENG 101"]}")
-print(f"{current_courses[3]} - {course_credits["HIS 105"]} credits - {course_professors["HIS 105"]} - {course_rooms["HIS 105"]}")
+print(f"{current_courses[1]} - {course_credits["MATH 131"]} credits - {course_professors["MATH 131"]} - {course_rooms["MATH 131"]}")
+print(f"{current_courses[2]} - {course_credits["ENG 100"]} credits - {course_professors["ENG 100"]} - {course_rooms["ENG 100"]}")
+print(f"{current_courses[3]} - {course_credits["HIS 106"]} credits - {course_professors["HIS 106"]} - {course_rooms["HIS 106"]}")
+print(f"{current_courses[4]} - {course_credits["COMP 121"]} credits - {course_professors["COMP 121"]} - {course_rooms["COMP 121"]}")
+print(f"{current_courses[5]} - {course_credits["GEEN 111"]} credits - {course_professors["GEEN 111"]} - {course_rooms["GEEN 111"]}")
 print()
 print("=== PERSONAL DEVELOPMENT ===")
 print(f"Current Skills: {current_skills}")
@@ -101,4 +103,3 @@ print(f"Current Academic Load: {academic_load} weekly commitments")
 print(f"Entertainment Backlog: {entertainment_backlog_count} items")
 print(f"Current Hobbies: {len(hobbies)} activities")
 print("================================================================")
-
