@@ -1,2 +1,104 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+# Personal Information Storage (strings)
+full_name = "Jerryeka Battle"
+Student_email = "jlbattle1@ncat.edu"
+Hometown = "Wilson, NC"
+Graduation_semester = "Spring 20292222222222222222222222222"
+Major = "Computer Science" 
+
+# Academic Data Organization (lists)
+current_courses = ["COMP 163", "MATH 131", "ENG 100", "HIS 106", "GEEN111", "COMP121"]
+completed_courses = []
+credit_hours = [3, 4, 3, 3, 1, 1] #corresponding to current courses
+gpa_history = [] #semester GPAs as floats
+
+# Contact Information Storage (tuples)
+emergency_contact = ("Dad", "Jerry Battle", "704-555-0199")
+home_address = ("509 Walton st", "Wilson", "NC", "27893")
+instagram_info = ("Instagram", "@JerryekaBattle", 46)
+twitter_info = ()
+birthday = ("Birthday", "7", "28", "2007")
+
+#Interest Tracking (sets)
+current_skills = {"Python basics", "Problem solving", "Time management", "Photography"}
+skills_to_learn = {"JavaScript", "Data structures", "Web design", "Public speaking", "HTML"}
+career_interests = {"Software development", "Web development", "Game development"}
+hobbies = {"Gaming", "Photography", "Reading", "Cooking", "Baking"}
+entertainment_backlog = {"COD BO2"}
+
+#Organizational Mapping (dict)
+course_credits = {"COMP 163": 3, "MATH 131": 4, "ENG 100": 3, "HIS 106": 3, "GEEN111": 1, "COMP121": 1}
+course_professors = {"COMP 163": "Prof. Rhodes", "MATH 131": "Dr. Varatharajah", "ENG 100": "Dr. Martinez", "HIS 106": "Mr. Devoe", "GEEN111": Parrish, "COMP121": "Prof. Rhodes"}
+course_rooms = {"COMP 163": "McNair 130", "MATH 131": "Marteena 233", "ENG 100": "GCB107", "HIS 106": "online", "GEEN111": "McNair240", "COMP121": "Graham210"}
+monthly_budget = {"Food": 210, "Entertainment": 100, "Books": 50, "Transportation": 10}
+study_hours_per_subject = {"Programming": 10, "Math": 8, "English": 4, "History": 3}
+contact_directory = {"Mom": "704-555-0199", "Roommate": "336-555-7821", "Academic Advisor": "336-334-5000"}
+
+#Required Calculations 
+total_current_credits = sum(credit_hours)
+cumulative_gpa = sum(gpa_history)/4
+# used to find the average
+num_current_courses = len(current_courses)
+num_completed_courses = len(completed_courses)
+Total_weekly_study_hours = study_hours_per_subject["Programming"] + study_hours_per_subject["Math"] + study_hours_per_subject["English"] + study_hours_per_subject["History"]
+academic_load = total_current_credits + Total_weekly_study_hours
+monthly_budget_total = monthly_budget["Food"] + monthly_budget["Entertainment"] + monthly_budget["Books"] + monthly_budget["Transportation"]
+daily_food_budget = round(((monthly_budget["Food"]) / 30), 2)
+# divided by 30 for average days in a month to get daily budget
+annual_budget = monthly_budget_total * 12
+study_cost_per_hour = round(((monthly_budget["Books"]) / Total_weekly_study_hours), 2)
+# books divided by study hours then rounded to 2
+
+# Analytics Calculations
+total_social_media_followers = (twitter_info[2]) + (instagram_info[2])
+skills_count_comparison = len(current_skills) / len(skills_to_learn)
+# confused on c,d figured it out wrote it in print hopes thats fine
+entertainment_backlog_count = len(entertainment_backlog)
+
+# print
+print("================================================================")
+print("              PERSONAL ACADEMIC & LIFE PORTFOLIO")
+print("================================================================")
+print(f"Student: {full_name} | Email: {Student_email}")
+print(f"From: {Hometown} | Graduating: {Graduation_semester}")
+print(f"Major: {Major}")
+print()
+print("=== ACADEMIC PROFILE ===")
+print(f"Current Semester: {total_current_credits} credits across {num_current_courses} courses")
+print(f"Cumulative GPA: {cumulative_gpa:.2f}")
+print(f"Weekly Study Time: {Total_weekly_study_hours} hours")
+print(f"Academic Investment: ${study_cost_per_hour} per study hour")
+print()
+print("Current Courses:")
+print(f"{current_courses[0]} - {course_credits["COMP 163"]} credits - {course_professors["COMP 163"]} - {course_rooms["COMP 163"]}")
+print(f"{current_courses[1]} - {course_credits["MATH 150"]} credits - {course_professors["MATH 150"]} - {course_rooms["MATH 150"]}")
+print(f"{current_courses[2]} - {course_credits["ENG 101"]} credits - {course_professors["ENG 101"]} - {course_rooms["ENG 101"]}")
+print(f"{current_courses[3]} - {course_credits["HIS 105"]} credits - {course_professors["HIS 105"]} - {course_rooms["HIS 105"]}")
+print()
+print("=== PERSONAL DEVELOPMENT ===")
+print(f"Current Skills: {current_skills}")
+print(f"Learning Goals: {skills_to_learn}")
+print(f"Career Interests: {career_interests}")
+print(f"Skills Currently Have: {len(current_skills)}")
+print(f"Skills Want to Learn: {len(skills_to_learn)}")
+print()
+print("=== FINANCIAL OVERVIEW ===")
+print(f"Monthly Budget: ${monthly_budget_total}")
+print(f"Food: ${monthly_budget["Food"]} (${daily_food_budget}/day)")
+print(f"Entertainment: ${monthly_budget["Entertainment"]}")
+print(f"Books: ${monthly_budget["Books"]}")
+print(f"Transportation: ${monthly_budget["Transportation"]}")
+print(f"Annual Projection: ${annual_budget}")
+print()
+print("=== CONNECTIONS & CONTACTS ===")
+print(f"Emergency Contact: {emergency_contact[1]} ({emergency_contact[0]}) - {emergency_contact[2]}")
+print(f"Home Address: {home_address[0]}, {home_address[1]}, {home_address[2]} {home_address[3]}")
+print(f"Social Media Presence: {total_social_media_followers} followers across 2 platforms")
+print(f"Key Contacts: {len(contact_directory)} people in directory")
+print()
+print("=== LIFE STATISTICS ===")
+print(f"Total Courses Completed: {num_completed_courses}")
+print(f"Current Academic Load: {academic_load} weekly commitments")
+print(f"Entertainment Backlog: {entertainment_backlog_count} items")
+print(f"Current Hobbies: {len(hobbies)} activities")
+print("================================================================")
+
