@@ -1,39 +1,39 @@
 # Personal Information Storage (strings)
-full_name = "Jerryeka Battle"
-Student_email = "jlbattle1@ncat.edu"
-Hometown = "Wilson, NC"
-Graduation_semester = "Spring 20292222222222222222222222222"
-Major = "Computer Science"
+full_name = "Jordan Smith"
+Student_email = "jsmith@ncat.edu"
+Hometown = "Charlotte, NC"
+Graduation_semester = "Spring 2028"
+Major = "Computer Science" 
 
 # Academic Data Organization (lists)
-current_courses = ["COMP 163", "MATH 131", "ENG 100", "HIS 106", "GEEN111", "COMP121"]
-completed_courses = []
-credit_hours = [3, 4, 3, 3, 1, 1] #corresponding to current courses
-gpa_history = [] #semester GPAs as floats
+current_courses = ["COMP 163", "MATH 150", "ENG 101", "HIS 105"]
+completed_courses = ["Biology", "Chemistry", "Calculus", "Spanish II", "World History"]
+credit_hours = [3, 3, 3, 3] #corresponding to current courses
+gpa_history = [3.2, 3.6, 3.4, 3.7] #semester GPAs as floats
 
 # Contact Information Storage (tuples)
-emergency_contact = ("Dad", "Jerry Battle", "704-555-0199")
-home_address = ("509 Walton st", "Wilson", "NC", "27893")
-instagram_info = ("Instagram", "@JerryekaBattle", 46)
-twitter_info = ("Twitter", "N/A", 0)
-birthday = ("Birthday", "7", "28", "2007")
+emergency_contact = ("Mom", "Hannah Smith", "704-555-0199")
+home_address = ("456 Oak Street", "Charlotte", "NC", "28202")
+instagram_info = ("Instagram", "@jordan_codes", 312)
+twitter_info = ("Twitter", "@jordandev", 127)
+birthday = ("Birthday", "5", "22", "2006")
 
 #Interest Tracking (sets)
-current_skills = {"Python basics", "Problem solving", "Time management", "Photography"}
-skills_to_learn = {"JavaScript", "Data structures", "Web design", "Public speaking", "HTML"}
-career_interests = {"Software development", "Web development", "Game development"}
-hobbies = {"Gaming", "Photography", "Reading", "Cooking", "Baking"}
-entertainment_backlog = {"COD BO2"}
+current_skills = {"Python basics", "HTML", "Problem solving", "Time management", "Photography"}
+skills_to_learn = {"JavaScript", "Data structures", "Git", "Web design", "Public speaking"}
+career_interests = {"Software development", "Web development", "Data science", "Game development"}
+hobbies = {"Gaming", "Photography", "Reading", "Soccer", "Music"}
+entertainment_backlog = {"One Piece", "Barry", "Life", "Incantation", "Memento"}
 
 #Organizational Mapping (dict)
-course_credits = {"COMP 163": 3, "MATH 131": 4, "ENG 100": 3, "HIS 106": 3, "GEEN 111": 1, "COMP 121": 1}
-course_professors = {"COMP 163": "Prof. Rhodes", "MATH 131": "Dr. Varatharajah", "ENG 100": "Dr. Martinez", "HIS 106": "Mr. Devoe", "GEEN 111": "Parrish", "COMP 121": "Prof. Rhodes"}
-course_rooms = {"COMP 163": "McNair 130", "MATH 131": "Marteena 233", "ENG 100": "GCB107", "HIS 106": "online", "GEEN 111": "McNair240", "COMP 121": "Graham210"}
-monthly_budget = {"Food": 210, "Entertainment": 100, "Books": 50, "Transportation": 10}
+course_credits = {"COMP 163": 3, "MATH 150": 3, "ENG 101": 3, "HIS 105": 3}
+course_professors = {"COMP 163": "Prof. Rhodes", "MATH 150": "Dr. Lee", "ENG 101": "Dr. Martinez", "HIS 105": "Dr. Brown"}
+course_rooms = {"COMP 163": "M-Eric 300", "MATH 150": "Marteena 201", "ENG 101": "Crosby 121", "HIS 105": "Crosby 210"}
+monthly_budget = {"Food": 450, "Entertainment": 200, "Books": 125, "Transportation": 100}
 study_hours_per_subject = {"Programming": 10, "Math": 8, "English": 4, "History": 3}
 contact_directory = {"Mom": "704-555-0199", "Roommate": "336-555-7821", "Academic Advisor": "336-334-5000"}
 
-#Required Calculations
+#Required Calculations 
 total_current_credits = sum(credit_hours)
 cumulative_gpa = sum(gpa_history)/4
 # used to find the average
@@ -70,11 +70,9 @@ print(f"Academic Investment: ${study_cost_per_hour} per study hour")
 print()
 print("Current Courses:")
 print(f"{current_courses[0]} - {course_credits["COMP 163"]} credits - {course_professors["COMP 163"]} - {course_rooms["COMP 163"]}")
-print(f"{current_courses[1]} - {course_credits["MATH 131"]} credits - {course_professors["MATH 131"]} - {course_rooms["MATH 131"]}")
-print(f"{current_courses[2]} - {course_credits["ENG 100"]} credits - {course_professors["ENG 100"]} - {course_rooms["ENG 100"]}")
-print(f"{current_courses[3]} - {course_credits["HIS 106"]} credits - {course_professors["HIS 106"]} - {course_rooms["HIS 106"]}")
-print(f"{current_courses[4]} - {course_credits["COMP 121"]} credits - {course_professors["COMP 121"]} - {course_rooms["COMP 121"]}")
-print(f"{current_courses[5]} - {course_credits["GEEN 111"]} credits - {course_professors["GEEN 111"]} - {course_rooms["GEEN 111"]}")
+print(f"{current_courses[1]} - {course_credits["MATH 150"]} credits - {course_professors["MATH 150"]} - {course_rooms["MATH 150"]}")
+print(f"{current_courses[2]} - {course_credits["ENG 101"]} credits - {course_professors["ENG 101"]} - {course_rooms["ENG 101"]}")
+print(f"{current_courses[3]} - {course_credits["HIS 105"]} credits - {course_professors["HIS 105"]} - {course_rooms["HIS 105"]}")
 print()
 print("=== PERSONAL DEVELOPMENT ===")
 print(f"Current Skills: {current_skills}")
